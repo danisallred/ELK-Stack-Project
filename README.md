@@ -72,15 +72,8 @@ The playbook implements the following tasks:
 - Command: sysctl -w vm.max_map_count=262144
 - Launch docker container: elk
 
-
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-_____________________________
-azureuser@ELK-VM:~$ sudo docker ps
-CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS          PORTS                                                                              NAMES
-afa751143c99   sebp/elk:761   "/usr/local/bin/star…"   8 days ago   Up 10 minutes   0.0.0.0:5044->5044/tcp, 0.0.0.0:5601->5601/tcp, 0.0.0.0:9200->9200/tcp, 9300/tcp   elk
-azureuser@ELK-VM:~$
-_____________________________
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
